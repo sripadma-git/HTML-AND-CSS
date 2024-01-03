@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'My-special-font-for-netflix';
+    src: url('fonts/Poppins-Light.ttf');
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'My-special-font-for-netflix';
+}
+html
+{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body
+{
+    background: black;
+}
+::-webkit-scrollbar
+{
+    width:10px;
+}
+::-webkit-scrollbar-thumb
+{
+    background: red;
+    border-radius: 35px;
+}
+
+.container
+{
+    width: 100%;
+    padding: 20px;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('background.webp');
+    background-size: cover;
+}
+.container header
+{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+}
+.container header img
+{
+    width: 100px;
+}
+.container header .right-logo .sign-in-btn
+{
+    padding: 8px 15px;
+    border-radius: 5px;
+    border:none;
+    background: red;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.container header .right-logo .sign-in-btn:hover
+{
+    background: black;
+}
+.container .center-text
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.container .center-text h1, p, small
+{
+    margin-bottom: 15px;
+}
+.container .center-text h1 
+{
+    font-size: 50px;
+    letter-spacing: 2px;
+    -webkit-text-stroke:1px;
+}
+.container .center-text p
+{
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+.container .center-text small
+{
+    font-size: 15px;
+}
+.container .buttons-box
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .buttons-box .buttons-left input
+{
+    padding: 13px 15px;
+    background:white;
+    border:none;
+    outline: none;
+    color:black;
+    width:500px;
+}
+.container .buttons-box .buttons-right input
+{
+    padding: 8px 25px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    border:none;
+    width: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.container .buttons-box .buttons-right input:hover
+{
+    background: black;
+}
+
+@media screen and (max-width: 760px)
+{
+    .container .center-text h1 
+    {
+        font-size: 30px;
+    }
+    .container .buttons-box .buttons-left input
+    {
+        width: 100%;
+    }
+
+}
+
+.enjoy-your-tv, .download-your-shows
+{
+    background: black;
+    margin:100px auto 100px auto; /* TOP RIGHT BOTTOM LEFT*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px 150px 30px!important;
+    border-bottom: 7px solid rgba(211, 211, 211, 0.25);
+}
+
+.enjoy-your-tv .enjoy-your-tv-left h1, .download-your-shows-right h1
+{
+    font-size: 45px;
+    -webkit-text-stroke:1px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.enjoy-your-tv .enjoy-your-tv-left p, .download-your-shows-right p
+{
+    font-size: 20px;
+    width: 70%;
+}
+.enjoy-your-tv .enjoy-your-tv-right img
+{
+    width: 400px;
+    height:250px;
+    /* margin-bottom: 50px; */
+}
+.download-your-shows
+{
+    column-gap: 100px;
+}
+.download-your-shows .download-your-shows-left img
+{
+   width: 300px;
+}
+@media screen and (max-width: 865px)
+{
+    .enjoy-your-tv, .download-your-shows
+    {
+        flex-wrap: wrap;
+    }
+    .enjoy-your-tv .enjoy-your-tv-left h1, .download-your-shows-right h1
+    {
+        font-size: 30px;
+    }
+    .enjoy-your-tv .enjoy-your-tv-left p, .download-your-shows-right p
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .enjoy-your-tv .enjoy-your-tv-right img, .download-your-shows .download-your-shows-left img
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+.membership
+{
+    width: 100%;
+    padding: 20px 20px 100px 20px;
+    text-align: center;
+    border-bottom: 7px solid rgba(211, 211, 211, 0.25);
+}
+.membership h4
+{
+    margin-bottom: 30px;
+}
+.membership-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.membership-container .membership-left input
+{
+    padding: 12px 16px;
+    background: white;
+    color: black;
+    border:none;
+    outline:none;
+    width:500px;
+}
+.membership-container .membership-right .membership-button
+{
+    padding: 10px 16px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    border:none;
+    font-size: 16px;
+}
+.membership-container .membership-right .membership-button:hover
+{
+    background: black;
+}
+footer
+{
+    width: 100%;
+    padding: 20px;
+}
+footer .footer-container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+footer .footer-container p
+{
+    opacity: 0.6;
+}
+footer .footer-container select
+{
+    color:lightgray;
+    padding:10px;
+    border-radius: 8px;
+    border:2px solid lightgray;
+    background: transparent;
+    opacity: 0.6;
+}
+footer .footer-container select option
+{
+    color: black;
+}
+@media screen and (max-width:762px)
+{
+    .membership-container .membership-left input
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width:530px)
+{   
+    footer .footer-container
+    {
+        flex-wrap: wrap;
+    }
+    footer .footer-sections
+    {
+        width: 40%;
+    }
+}   
